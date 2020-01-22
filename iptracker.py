@@ -5,7 +5,6 @@ import socket
 import os
 
 while True:
-    time.sleep(10)
     try: 
         gw = os.popen("ip -4 route show default").read().split()
         s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -20,5 +19,6 @@ while True:
             print("Sent IP Address")
         except:
             print('Couldn\'t POST data to remote. Throwing out text...')
-        except: 
-            print("Unable to get Hostname and IP")
+    except: 
+        print("Unable to get Hostname and IP")
+    time.sleep(10)
