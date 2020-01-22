@@ -14,6 +14,6 @@ from ..configuration.config import DB_URL
 from .base import Base
 from .query import BaseQuery
 
-engine = create_engine(DB_URL(), convert_unicode=True, pool_recycle=3600, pool_size=30, max_overflow=0)
+engine = create_engine(DB_URL(), convert_unicode=True)
 db_session = None
 Session = sessionmaker(autocommit=False, autoflush=False, bind=engine, query_cls=BaseQuery)
