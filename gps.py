@@ -31,7 +31,7 @@ while True:
             print('Waiting for fix...')
             continue
 
-        if !has_fix:
+        if has_fix == False:
             has_fix = True
             post_status(category='GPS', status='Successful satellite fix')
 
