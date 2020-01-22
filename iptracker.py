@@ -21,5 +21,4 @@ while True:
         except:
             print('Couldn\'t POST data to remote. Throwing out text...')
         except: 
-            print("Unable to get Hostname and IP") 
-    
+            print("Unable to get Hostname and IP")
