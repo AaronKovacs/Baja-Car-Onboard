@@ -6,7 +6,7 @@ import serial
 
 from api_shared import post_status
 
-uart = serial.Serial("/dev/cu.SLAB_USBtoUART", baudrate=9600, timeout=10)
+uart = serial.Serial("/dev/ttyUSB0", baudrate=9600, timeout=10)
 
 # Create a GPS module instance.
 gps = adafruit_gps.GPS(uart, debug=False)
