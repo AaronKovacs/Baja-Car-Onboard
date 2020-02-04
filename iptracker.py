@@ -21,4 +21,4 @@ while True:
             print('Couldn\'t POST data to remote. Throwing out text...')
     except: 
         print("Unable to get Hostname and IP")
-    time.sleep(10)
+    time.sleep(60 * 30)
